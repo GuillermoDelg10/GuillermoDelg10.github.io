@@ -1,111 +1,59 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fff;
     color: #333;
 }
-
-:root {
-    --main-color: #16b93a;
-}
-
 header, section, footer {
-    margin: 20px auto;
-    width: 80%;
-    max-width: 960px;
+    margin: 25px auto;
+    width: 85%;
+    max-width: 1000px;
 }
-
+.contenedor {
+     background-color: rgb(238, 234, 234);
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 header {
     text-align: center;
 }
 
 h1 {
-    color: var(--main-color);
+    color: black;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
 }
 
 h2 {
-    border-bottom: 2px solid var(--main-color);
-    padding-bottom: 5px;
+    border-bottom: 4px solid black;
+    padding-bottom: 8px;
 }
-
+h3 {
+    font-family:sans-serif;
+    text-shadow: 0 3px 7px rgba(0,0,0,0.2);
+}
 section {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
     margin-bottom: 20px;
 }
 
 footer {
+    display: flex;
     text-align: center;
-    padding: 20px;
-    background-color: var(--main-color);
+    padding: 25px;
+    background-color:  black;
     color: #fff;
+    width: 100%;
 }
-
-#idiomas {
-    background-color: #f4f4f4;
-    padding: 20px;
-}
-
-.languages-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-.language {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    width: 180px;
-    text-align: center;
-}
-
-.language span {
-    font-size: 50px;
-    margin-bottom: 10px;
-}
-
-
-#informatica {
-    background-color: #f4f4f4;
-    padding: 20px;
-}
-
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-.skill {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    width: 180px;
-    text-align: center;
-}
-
-.skill span {
-    font-size: 50px;
-    margin-bottom: 10px;
-}
-
-#experiencia {
-    background-color: #f4f4f4;
-    padding: 20px;
+.barra_superior {
+    height: 4px;
+    background-color: black;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 50px;
 }
 
 .experience-container {
@@ -115,57 +63,9 @@ footer {
     gap: 20px;
 }
 
-.job {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    width: 250px; /* Ajusta según necesidad */
-    text-align: center;
-}
-
-.job span {
-    font-size: 50px;
-    margin-bottom: 10px;
-}
-
-#formacion-reglada {
-    background-color: #f4f4f4;
-    padding: 20px;
-}
-
-.education-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-.degree {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    width: 250px; /* Ajuste según necesidad */
-    text-align: center;
-}
-
-.degree span {
-    font-size: 50px;
-    margin-bottom: 10px;
-}
-
-#formacion-complementaria {
-    background-color: #f4f4f4;
-    padding: 20px;
-}
-
+.languages-container,
+.skills-container,
+.education-container,
 .courses-container {
     display: flex;
     flex-wrap: wrap;
@@ -173,19 +73,69 @@ footer {
     gap: 20px;
 }
 
-.course {
-    display: flex;
+.language {
+    display: inherit;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
-    padding: 20px;
+    background-color: #4eec40;
+    padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    width: 250px; /* Ajuste según necesidad */
-    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.7);
+    width: 270px; 
+    text-align: left;
 }
 
+.job {
+    display: inline-block;
+    flex-direction: column;
+    background-color: #fdd41b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    width: 240px;
+    text-align: center;
+}
+.course {
+    display: inline-block;
+    flex-direction: column;
+    background-color: #e0992f;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+    width: 260px;
+    text-align: left;
+}
+.skill,
+.degree {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: #df3333;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.8);
+    width: 250px; 
+    text-align: left;
+}
+
+.language span,
+.skill span,
+.job span,
+.degree span,
 .course span {
     font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.Formacion {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: rgb(77, 213, 218);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.9);
+    width: 300px; 
+    text-align: center;
     margin-bottom: 10px;
 }
